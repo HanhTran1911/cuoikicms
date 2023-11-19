@@ -43,4 +43,22 @@
 
 .site-banner .item .wp-custom-header img {
     filter: brightness(0.7);
+}.widget_raratheme_companion_cta_widget .raratheme-cta-container
+{
+    max-width: 800px !important;
+}
+.widget_raratheme_companion_cta_widget .text-holder{
+    padding: 10px 0;
+    color: #ffffffcf;
+}
+.widget_raratheme_companion_cta_widget a.btn-cta {
+    background:none;
+    border: 1px solid white;
+}
+.widget_raratheme_companion_cta_widget a.btn-cta:hover {
+    background: none;
+    color: white;
+}
+.widget_raratheme_companion_cta_widget .widget-title {
+    font-weight: 700;
 }
