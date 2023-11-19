@@ -23,8 +23,8 @@
      * @hooked jobscout_head
     */
     do_action( 'jobscout_before_wp_head' );
-    
     wp_head(); ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css">
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage">

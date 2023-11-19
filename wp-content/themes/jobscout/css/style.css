@@ -1,0 +1,46 @@
+.banner-caption .caption-inner {
+    max-width: 1200px !important;
+}
+
+.banner-caption .search-filter-wrap {
+    padding: 20px;
+    background-color: #090a0b42;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs {
+    border-radius: 0 !important;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs .search_keywords {
+    margin-right: 10px;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input::placeholder {
+    color: rgba(241, 0, 0, 0.5);
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input[type="submit"] {
+    background-image: none;
+    width: auto;
+    text-indent: 0%;
+    padding: 0px 40px;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input[type="submit"]:hover {
+    background-image: none;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input,
+.banner-caption .jobscout_job_filters .search_jobs .search_location select:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.banner-caption .jobscout_job_filters .search_jobs input,
+.banner-caption .jobscout_job_filters .search_jobs .search_location select {
+    border: none;
+}
+
+.site-banner .item .wp-custom-header img {
+    filter: brightness(0.7);
+}
