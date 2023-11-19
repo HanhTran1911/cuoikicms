@@ -62,3 +62,18 @@
 .widget_raratheme_companion_cta_widget .widget-title {
     font-weight: 700;
 }
+#post-982 .entry-header .entry-title
+{
+    display: none;
+}
+.page-id-982 .site-content
+{
+    margin-top: 0;
+}
+.page-id-982 .site-content .post-982 figure.post-thumbnail{
+    margin-bottom: 0 !important;
+}
+.page-id-982 .site-content .container
+{
+    max-width: none;
+}
