@@ -4501,6 +4501,7 @@ WIDGET CLIENT LOGO
   flex: 1;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -8158,4 +8159,141 @@ RESPONSIVE STYLESHEET
 
 .wp-block-social-links {
   flex-wrap: wrap !important;
+}
+
+/* header */
+a.btn{
+  background-color: orange !important;
+  border: none !important;
+}
+.btn-wrap a.btn{
+  background-color: orange !important;
+  border: none !important; 
+}
+a.btn{
+  background: orange !important;
+ 
+}
+a.btn:hover {
+  background: none !important;
+  color: orange !important;
+  border: 1px solid orange !important;
+}
+.main-navigation ul li a{
+  padding: 9px 17px !important;
+}
+.main-navigation ul li.current-menu-item>a, .main-navigation ul li.current_page_item>a{
+  border-bottom: 2px solid orange !important;
+  color: #000000 !important;
+}
+.site-branding .site-title a {
+  color: #000000 !important;
+}
+
+/* contact */
+.wpcf7{
+	background-color: rgb(234 117 30) !important;
+
+}
+.wpcf7 form{
+display: flex;
+justify-content: center;
+gap: 20px ;
+align-items: center;
+}
+.wpcf7 form p label{
+display: flex;
+align-items: center;
+color:  white;
+font-size: 20px;
+font-weight: bold;
+}
+.wpcf7 form p {
+margin-bottom: 17px !important;
+}
+.wpcf7 form p label span{
+display: flex;
+align-items: center;
+color:  white;
+font-size: 20px;
+font-weight: bold;
+background-color: white;
+}
+.wpcf7 form p label span svg{
+color: rgb(234 117 30) !important;
+margin-left: 20px;
+}
+.wpcf7 form p label b{
+margin-right: 20px;
+font-weight: 700;
+}
+.wpcf7 form p label span input{
+background: white !important;
+}
+.wpcf7 form p label span input:focus{
+border: none;
+outline: none !important;
+}
+.wpcf7 form p input{
+background: rgb(234 117 30) !important;
+border: 1px solid white !important;
+}
+.wpcf7-submit{
+color: white !important;
+}
+
+/*  chỉnh cho contact và mấy icon phía trên */
+.client-section .container{
+  max-width: 100% !important;
+}
+.client-section .container .widget_raratheme_client_logo_widget{
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+text-align: center !important;
+}
+
+/* footer */
+.footer-t{
+  background: white !important;
+  /* color: #000 !important; */
+  padding-top: 0 !important;
+}
+.widget_nav_menu{
+  margin-bottom: 0 !important;
+}
+.site-footer .widget .widget-title {
+  margin-bottom: 20px !important;
+  text-align: center;
+  color: #000 !important;
+}
+.site-footer .widget ul li {
+  border: none;
+font-weight: bold;
+color: #000 !important;
+}
+.site-footer .widget ul li a{
+color: #000 !important;
+}
+.site-footer .widget ul{
+ display: flex;
+ justify-content: center;
+ gap:30px;
+}
+/* icon footer */
+.icon-holder img{
+width: 50px;
+height: 50px;
+}
+.widget_rrtc_icon_text_widget .icon-holder img:nth-child(2){
+border-radius: 50%;
+background-color: white !important;
+border: 1px solid gray;
+}
+/* .widget_rrtc_icon_text_widget .icon-holder:nth-child(1){
+border-radius: 50%;;
+border:none !important;
+} */
+.wp-container-core-group-layout-2.wp-container-core-group-layout-2 {
+  justify-content: center;
+  gap:30px;
 }
