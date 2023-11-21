@@ -5630,13 +5630,13 @@ JOB LISTING PAGE
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .company-logo {
-  width: 100px;
+  width: 150px;
   margin: 0;
   background: #eeeeee;
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .job-title-wrap {
-  width: calc(100% - 100px);
+  width: calc(100% - 150px);
   padding-left: 20px;
 }
 
