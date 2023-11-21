@@ -8,6 +8,11 @@
 
 function jobscout_widgets_init(){    
     $sidebars = array(
+        'blog-news'   => array(
+            'name'        => __( 'blog-news', 'jobscout' ),
+            'id'          => 'blog-news', 
+            'description' => __( 'Default blog-news', 'jobscout' ),
+        ),
         'sidebar'   => array(
             'name'        => __( 'Sidebar', 'jobscout' ),
             'id'          => 'sidebar', 
