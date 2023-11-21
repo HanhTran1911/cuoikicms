@@ -228,7 +228,7 @@ function gma_wpjmcpp_display_job_meta_data() {
 
   // Checks if the company name has been added as a tag to the individual job listing
   if (!empty($data)) {
-  	$company_name = "<li><a href='" . esc_url( $url ) . "'>" . esc_html( $data ) . " profile</a></li>";	
+  	$company_name = "<li><a href='" . esc_url( $url ) . "'>" . esc_html( $data ) . "</a></li>";	
   } else {
   	$company_name = "<li><a href='" . esc_url( $url ) . "'>Company profile</a></li>";	
   }

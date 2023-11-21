@@ -8,6 +8,11 @@
 
 function jobscout_widgets_init(){    
     $sidebars = array(
+        'topjob'   => array(
+            'name'        => __( 'topjob', 'jobscout' ),
+            'id'          => 'topjob', 
+            'description' => __( 'Default topjob', 'jobscout' ),
+        ),
         'sidebar'   => array(
             'name'        => __( 'Sidebar', 'jobscout' ),
             'id'          => 'sidebar', 
