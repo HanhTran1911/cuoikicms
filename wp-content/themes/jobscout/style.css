@@ -2958,7 +2958,8 @@ ARTICLE SECTION
 ===========================*/
 section.article-section {
   margin: 70px 0;
-  text-align: center;
+  /* text-align: center; */
+  background-color: #f5f5f7;
 }
 
 .article-section .article-wrap {
@@ -8206,7 +8207,26 @@ RESPONSIVE STYLESHEET
   font-size: .888em;
   font-weight: 400;
 }
+/* new blog */
+.wp-block-latest-posts.wp-block-latest-posts__list {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important; 
+  gap: 30px !important;
+}
+.wp-block-latest-posts li {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    padding: 25px;
+}
+.wp-block-latest-posts__post-title{
+  color: #000;
+  font-size: 1.3112em;
+  font-weight: bold; /* Áp dụng kiểu chữ in đậm */
+  text-align: left; /* Căn lề trái */
+}
 
+/* end new blog */
 .post .entry-content ul.wp-block-archives-list li:last-child,
 .post .entry-content ul.wp-block-latest-posts__list li:last-child {
   border-bottom: none;
