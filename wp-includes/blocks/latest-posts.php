@@ -150,7 +150,8 @@ function render_block_core_latest_posts( $attributes ) {
 			if ( str_ends_with( $trimmed_excerpt, ' [&hellip;]' ) ) {
 				$excerpt_length = (int) apply_filters( 'excerpt_length', $block_core_latest_posts_excerpt_length );
 				if ( $excerpt_length <= $block_core_latest_posts_excerpt_length ) {
-					$trimmed_excerpt  = substr( $trimmed_excerpt, 0, -11 );
+					$max_length = 10; // Số ký tự tối đa bạn muốn giới hạn
+					$trimmed_excerpt  = mb_substr( $trimmed_excerpt, 0, $max_length, 'UTF-8' );
 					$trimmed_excerpt .= sprintf(
 						/* translators: 1: A URL to a post, 2: Hidden accessibility text: Post title */
 						__( '… <a href="%1$s" rel="noopener noreferrer">Read more<span class="screen-reader-text">: %2$s</span></a>' ),
@@ -165,8 +166,9 @@ function render_block_core_latest_posts( $attributes ) {
 			}
 
 			$list_items_markup .= sprintf(
-				'<div class="wp-block-latest-posts__post-excerpt right">%1$s</div>',
-				$trimmed_excerpt
+				'<div class="wp-block-latest-posts__post-excerpt right">%1$s<a href="%1$s" class="wp-block-latest-posts__post right">Read more</a></div>',
+				esc_html($trimmed_excerpt),
+				esc_url($post_link)
 			);
 		}
 
