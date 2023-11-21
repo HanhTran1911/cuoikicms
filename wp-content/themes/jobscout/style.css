@@ -2535,10 +2535,37 @@ section.category-section .widget_rrtc_icon_text_widget {
 /*=============================
 TOP JOB SECTION
 =============================*/
+/* search */
+.section-search{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
 section.top-job-section {
   background: #f5f5f7;
   padding: 70px 0;
 }
+section.top-job-section li, a{
+text-decoration: none !important;
+}
+.top-job-section .row div.job_listings article .entry-meta a {
+  color: #000;
+}
+
+.top-job-section .row div.job_listings article .entry-meta a:hover {
+  color: #2ace5e;
+}
+.company-name-job .wpjmef-field-salary,
+	.company-name-job .wpjmef-field-important-info {
+		display: none;
+	}
+  .company-name-job{
+    border-right: .8px solid #cdcde6 ;
+    border-left: .8px solid #cdcde6 ;
+  }
+	.company-name-job li {
+		list-style: none;
+	}
 
 section.top-job-section .section-title {
   text-align: center;
@@ -2549,14 +2576,32 @@ section.top-job-section .section-title {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  gap: 30px;
 }
+.top-job-section .hentry, .section-search .hentry{
+  margin: unset !important;
+}
+.custom-limit-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* Số dòng tối đa hiển thị */
+  overflow: hidden;
+  font-size: 0.8778em;
+  margin: 10px 0;
+}
+ul {
+  margin: 0 !important;
 
+}
+#job-posting-section .container {
+  max-width: 1285px;
+}
 .top-job-section .row div.job_listings article {
   width: 48%;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-right: 2.5%;
-  margin-bottom: 3%;
+  /* margin-right: 2.5%; */
+  /* margin-bottom: 3%; */
   border-radius: 5px;
   padding: 30px;
   position: relative;
@@ -2566,12 +2611,15 @@ section.top-job-section .section-title {
   overflow: hidden;
 }
 
+.job_listings .company_logo{
+  width: 150px;
+}
 .top-job-section .row div.job_listings article:nth-child(2n) {
   margin-right: 0;
 }
 
 .top-job-section .row div.job_listings article .company-logo {
-  width: 100px;
+  width: 150px;
   margin: 0;
   background: #eeeeee;
 }
@@ -2597,18 +2645,23 @@ section.top-job-section .section-title {
 }
 
 .top-job-section .row div.job_listings article .job-title-wrap {
-  width: calc(100% - 100px);
+  width: calc(100% - 150px);
   padding-left: 20px;
+  margin: auto;
 }
 
 .top-job-section .row div.job_listings article .entry-title {
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 30px;
-  font-size: 1.1112em;
+  /* padding-right: 30px; */
+  font-size: 1.4112em;
   line-height: 1.45em;
-}
 
+}
+.time-tob-job{
+  font-size: 15px;
+  margin-bottom: 9px;
+}
 .top-job-section .row div.job_listings article .company-name {
   font-size: 0.8888em;
   color: rgba(0, 0, 0, 0.5);
@@ -2622,18 +2675,26 @@ section.top-job-section .section-title {
 }
 
 .top-job-section .row div.job_listings article .entry-meta {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 15px;
-  padding-top: 15px;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  /* margin-top: 15px; */
+  /* padding-top: 15px; */
   font-size: 1em;
+  display: flex;
+  align-items: center;
+  background-color: #e1e1e2;
+  padding: 6px 0px;
+  border-radius: 9px;
+  font-size: 0.7778em;
+  white-space: nowrap;
+  justify-content: center;
 }
 
 .top-job-section .row div.job_listings article .salary-amt,
 .top-job-section .row div.job_listings article .company-address {
-  font-size: 0.8888em;
-  line-height: 1.44em;
-  font-weight: 400;
-  margin-bottom: 5px;
+/* font-size: 0.8888em; */
+line-height: 1.44em;
+font-weight: 400;
+/* margin-bottom: 5px; */
 }
 
 .top-job-section .row div.job_listings article .salary-amt .currency {
@@ -2654,31 +2715,32 @@ section.top-job-section .section-title {
   margin-right: 5px;
 }
 
-.top-job-section .row div.job_listings article .entry-meta a {
-  color: #000;
-}
 
-.top-job-section .row div.job_listings article .entry-meta a:hover {
-  color: #2ace5e;
-}
 
+	.section-top-job .entry-meta div{
+    padding: 0 10px;
+    
+  }
 .job-manager li.job-type,
 .job-types li.job-type,
 .job_listing li.job-type {
-  list-style: none;
-  font-size: 0.7778em;
+ /* list-style: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 700; */
+  /* font-size: 0.7778em; */
   display: inline-block;
-  border: 1px solid #2ace5e;
+  /* border: 1px solid #2ace5e;
   border-radius: 40px;
-  padding: 5px 20px;
-  color: #2ace5e;
-  margin-top: 10px;
+  padding: 5px 20px; */
+  color: #000;
+  /* margin-top: 10px; */
   cursor: default;
 }
+.job-type{
+  color: #000 !important;
 
+}
 .job-manager li.freelance,
 .job-types li.freelance,
 .job_listing li.freelance {
@@ -5557,7 +5619,7 @@ JOB LISTING PAGE
 .site-main .entry-content div.job_listings div.job_listings article {
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   border-radius: 5px;
   padding: 30px;
   position: relative;
@@ -5569,13 +5631,13 @@ JOB LISTING PAGE
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .company-logo {
-  width: 100px;
+  width: 150px;
   margin: 0;
   background: #eeeeee;
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .job-title-wrap {
-  width: calc(100% - 100px);
+  width: calc(100% - 150px);
   padding-left: 20px;
 }
 
@@ -5599,23 +5661,27 @@ JOB LISTING PAGE
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  margin-top: 15px;
-  padding-top: 15px;
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+  /* margin-top: 15px; */
+  /* padding-top: 15px; */
   font-size: 1em;
   display: flex;
-  flex: 1;
-  flex-wrap: wrap;
   align-items: center;
+  background-color: #e1e1e2;
+  padding: 6px 0px;
+  border-radius: 9px;
+  font-size: 0.7778em;
+  white-space: nowrap;
+  justify-content: center;
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta .salary-amt,
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta .company-address {
-  font-size: 0.8888em;
-  line-height: 1.44em;
+  /* font-size: 0.8888em; */
+  /* line-height: 1.44em; */
   font-weight: 400;
-  margin-bottom: 5px;
-  margin-right: 40px;
+  /* margin-bottom: 5px; */
+  /* margin-right: 40px; */
 }
 
 .site-main .entry-content div.job_listings div.job_listings article .entry-meta .salary-amt .currency {
