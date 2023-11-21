@@ -8998,7 +8998,7 @@ font-weight: bold;
 color: #000 !important;
 }
 .site-footer .widget ul li a{
-color: #000 !important;
+color: #000 ;
 }
 .site-footer .widget ul{
  display: flex;
