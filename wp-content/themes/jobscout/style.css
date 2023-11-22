@@ -1096,6 +1096,9 @@ object {
 /*============================
 COMMON CSS
 ============================*/
+.home section#block-37{
+  display: none !important;
+}
 body.custom-background .site {
   max-width: 1200px;
   margin: 0 auto;
