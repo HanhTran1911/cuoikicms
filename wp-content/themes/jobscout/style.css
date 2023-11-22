@@ -2223,7 +2223,7 @@ body.home:not(.banner-enabled) .site-header {
 .main-navigation ul li.current_page_item > a,
 .main-navigation ul li.current-menu-ancestor > a,
 .main-navigation ul li.current_page_ancestor > a {
-  color: #2ace5e;
+  color: orange;
 }
 
 .main-navigation ul li ul {
@@ -8953,6 +8953,9 @@ background-color: white;
 color: rgb(234 117 30) !important;
 margin-left: 20px;
 }
+.wpcf7 form .wpcf7-response-output {
+  width: 200px !important;
+}
 .wpcf7 form p label b{
 margin-right: 20px;
 font-weight: 700;
@@ -8980,6 +8983,9 @@ color: white !important;
   max-width: 1170px !important;
   margin: 0 auto !important;
 text-align: center !important;
+}
+.widget_block .wp-block-group{
+  max-width: 100% !important;
 }
 
 /* footer */
